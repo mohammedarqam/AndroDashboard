@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Appointments</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-navbar color="primary">
+      <ion-row>
+        <ion-col col-2>
+          <ion-title>Name</ion-title>
+        </ion-col>
+        <ion-col col-2>
+          <ion-title>Phone</ion-title>
+        </ion-col>
+        <ion-col col-2>
+          <ion-title>Email</ion-title>
+        </ion-col>
+        <ion-col col-2>
+          <ion-title>Date</ion-title>
+        </ion-col>
+        <ion-col col-2>
+          <ion-title>Message</ion-title>
+        </ion-col>
+      </ion-row>
+    </ion-navbar>
+  </ion-grid>
+
+
+  <ion-card >
+    <ion-card-content>
+      <ion-grid>
+        <ion-row text-left *ngFor="let a of appointments">
+          <ion-col col-2>
+            {{a.Name}}
+          </ion-col>
+          <ion-col col-2>
+            {{a.Phone}}
+          </ion-col>
+          <ion-col col-2>
+            {{a.Mail}}
+          </ion-col>
+          <ion-col col-2>
+            {{a.Date}}
+          </ion-col>
+          <ion-col col-2>
+            {{a.Message}}
+          </ion-col>
+          <ion-col col-2>
+            <button ion-button icon-only color="danger" (click)="delPConfirm(a)" clear>
+              <ion-icon name="md-trash"></ion-icon>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

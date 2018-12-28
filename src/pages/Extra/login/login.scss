@@ -3,7 +3,7 @@ page-login {
         overflow: hidden;
       }
       .bg-main {
-        background-image: url("../assets/imgs/bgMain.png");
+        background-image: url("../assets/imgs/blur-bg.jpg");
         position: fixed;
         width: 100%;
         height: 100%;
@@ -22,7 +22,7 @@ page-login {
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        width: 50%;
+        width: 40%;
         background-color: rgba(0, 0, 0, 0.8);
       }
       .signinTitle {

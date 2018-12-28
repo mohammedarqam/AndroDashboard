@@ -1,0 +1,12 @@
+page-contact-us {
+    .card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 40%;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+}

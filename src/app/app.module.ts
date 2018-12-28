@@ -8,18 +8,18 @@ import * as firebase from 'firebase';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-import { SignUpPage } from '../pages/Extra/sign-up/sign-up';
-import { ProfilePage } from '../pages/MainPages/profile/profile';
+import { ContactUsPage } from '../pages/MainPages/contact-us/contact-us';
+import { AppointmentsPage } from '../pages/MainPages/appointments/appointments';
 
 
 
 export const firebaseCred = {
-  apiKey: "AIzaSyDfYGCZchTJHmNBlk4-T4-B24d7qtBs4LQ",
-  authDomain: "posters-83a2e.firebaseapp.com",
-  databaseURL: "https://posters-83a2e.firebaseio.com",
-  projectId: "posters-83a2e",
-  storageBucket: "posters-83a2e.appspot.com",
-  messagingSenderId: "9709869347"
+  apiKey: "AIzaSyD_i1KYWVQla7bK9Lg4c72BnJUsy-XZTcw",
+  authDomain: "androlife-dashboard.firebaseapp.com",
+  databaseURL: "https://androlife-dashboard.firebaseio.com",
+  projectId: "androlife-dashboard",
+  storageBucket: "androlife-dashboard.appspot.com",
+  messagingSenderId: "134490518258"
 };
 firebase.initializeApp(firebaseCred);
 
@@ -31,8 +31,8 @@ firebase.initializeApp(firebaseCred);
     MyApp,
     DashboardPage,
     LoginPage,
-    SignUpPage,
-    ProfilePage,
+    ContactUsPage,
+    AppointmentsPage,
   ],
   imports: [
     BrowserModule,
@@ -46,8 +46,9 @@ firebase.initializeApp(firebaseCred);
     MyApp,
     DashboardPage,
     LoginPage,
-    SignUpPage,
-    ProfilePage,
+    ContactUsPage,
+    AppointmentsPage,
+
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler }

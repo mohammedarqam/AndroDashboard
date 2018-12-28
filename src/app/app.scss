@@ -28,7 +28,7 @@ ion-menu ::-webkit-scrollbar {
   }
   
   ion-menu .activeHighlight {
-    background-color: #209E91;
+    background-color: map-get($colors,primary);
     color: white !important;
   }
   .content {

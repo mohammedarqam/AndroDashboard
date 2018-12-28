@@ -10,13 +10,23 @@ import * as firebase from 'firebase';
 })
 export class DashboardPage {
 
+  apps : number = 0;
+  conts : number = 0;
 
   constructor(
     public navCtrl: NavController,
-    private db: AngularFireDatabase,
     private menuCtrl: MenuController,
   ) {
     this.menuCtrl.enable(true);
   }
 
-}
+  ionViewDidEnter(){
+    this.getAppointments();
+  }
+  getAppointments(){
+    firebase.database().ref("Appointment").once("value",itemsSnap=>{
+      this.apps = itemsSnap.numChildren();
+    })
+  }
+
+} 

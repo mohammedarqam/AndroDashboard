@@ -1,8 +1,8 @@
 <ion-split-pane  >
   <ion-menu [content]="content" [class.fullPain]="!full" [class.halfPain]="full" >
     <ion-header>
-      <ion-toolbar color="dark">
-        <img src="assets/imgs/logWhite.png" />
+      <ion-toolbar padding >
+        <img src="assets/imgs/logoMain.png" width="70%;" height="auto;" />
       </ion-toolbar>
     </ion-header>
 
@@ -10,7 +10,7 @@
 
       <ion-list no-lines *ngIf="full" >
         <button menuClose color="dark" [class.activeHighlight]="checkActive(p)" 
-        ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        ion-item *ngFor="let p of pages" (click)="openPage(p)" text-uppercase >
           <ion-icon class="menu-icon" item-left [name]="p.icon" color="white" ></ion-icon>
           {{p.title}}
         </button>

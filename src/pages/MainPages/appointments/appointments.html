@@ -1,11 +1,22 @@
 <ion-header>
-  <ion-navbar color="primary">
-    <ion-title>Appointments</ion-title>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
+
+  <ion-item no-lines class="content">
+    <button ion-button clear item-start icon-only large>
+      <ion-icon name="md-calendar"></ion-icon>
+    </button>
+    <h1 class="title" ion-text text-uppercase>appointments</h1>
+  </ion-item>
+
+
 
   <ion-grid>
     <ion-navbar color="primary">
@@ -30,7 +41,7 @@
   </ion-grid>
 
 
-  <ion-card >
+  <ion-card>
     <ion-card-content>
       <ion-grid>
         <ion-row text-left *ngFor="let a of appointments">

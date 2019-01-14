@@ -15,6 +15,7 @@ export class DashboardPage {
 
   constructor(
     public navCtrl: NavController,
+    public db : AngularFireDatabase,
     private menuCtrl: MenuController,
   ) {
     this.menuCtrl.enable(true);
@@ -22,6 +23,7 @@ export class DashboardPage {
 
   ionViewDidEnter(){
     this.getAppointments();
+    this.getMeets();
   }
   getAppointments(){
     firebase.database().ref("Appointment").once("value",itemsSnap=>{
@@ -29,4 +31,9 @@ export class DashboardPage {
     })
   }
 
+  getMeets(){
+    firebase.database().ref("ContactUs").once("value",itemsSnap=>{
+      this.conts = itemsSnap.numChildren();
+    })
+  }
 } 

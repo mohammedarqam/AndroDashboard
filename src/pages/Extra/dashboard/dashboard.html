@@ -1,14 +1,23 @@
 <ion-header>
-  <ion-navbar color="primary">
+  <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
+    <ion-buttons end>
+      <button ion-button large (click)="singOut()">
+        Sign Out
+        <ion-icon margin-left name="md-log-out"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-item no-lines class="content">
-    <h1 class="title">DASHBOARD</h1>
+    <button ion-button clear item-start icon-only large>
+      <ion-icon name="ios-analytics" ></ion-icon>
+    </button>
+    <h1 class="title" ion-text text-uppercase >DASHBOARD</h1>
   </ion-item>
 
   <ion-grid>

@@ -20,7 +20,7 @@ ion-menu ::-webkit-scrollbar {
   }
   
   ion-menu .bg-semidark {
-    background-color: #1C2B36;
+    background-color: map-get($colors,dark);
   }
   
   ion-menu .no-scroll .scroll-content {
@@ -28,7 +28,7 @@ ion-menu ::-webkit-scrollbar {
   }
   
   ion-menu .activeHighlight {
-    background-color: map-get($colors,primary);
+    background-color: map-get($colors,darkhigh);
     color: white !important;
   }
   .content {
@@ -53,4 +53,7 @@ ion-menu ::-webkit-scrollbar {
   .halfPain{
     min-width: 20% !important;
     max-width: 20% !important ;
+  }
+  .content{
+    background: #f4f4f4;
   }

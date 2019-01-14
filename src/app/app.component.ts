@@ -26,7 +26,7 @@ export class MyApp {
     this.initializeApp();
 
     this.pages = [
-      { title: 'DashBoard', component: DashboardPage, icon: "flash", color: "yellowi" },
+      { title: 'DashBoard', component: DashboardPage, icon: "ios-analytics", color: "yellowi" },
       { title: 'Appointments', component: AppointmentsPage, icon: "md-calendar", color: "white" },
       { title: 'Contact Us', component: ContactUsPage, icon: "md-call", color: "white" },
 
